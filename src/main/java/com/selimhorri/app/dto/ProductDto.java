@@ -26,6 +26,6 @@ public class ProductDto implements Serializable {
 	private Integer quantity;
 
 	@JsonInclude(Include.NON_NULL)
-	private Set<FavouriteDto> favouriteDtos;
+	private Set<OrderItemDto> orderItemDtos;
 
 }

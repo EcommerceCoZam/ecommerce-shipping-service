@@ -22,13 +22,25 @@
     </repositories>
 
     <!-- Project Information -->
-    <artifactId>favourite-service</artifactId>
-    <version>0.1.0</version>
-    <name>favourite-service</name>
-    <description>Spring Boot microservice for handling user favourites</description>
+    <artifactId>shipping-service</artifactId>
+	<version>0.1.0</version>
+    <name>shipping-service</name>
+    <description>Spring Boot microservice for shipping operations</description>
     <packaging>jar</packaging>
 
     <dependencies>
+        <!-- Spring Cloud Core -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter</artifactId>
+        </dependency>
+
+        <!-- Configuration Management -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
         <!-- Web Framework -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -51,18 +63,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-
-        <!-- Spring Cloud Core -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter</artifactId>
-        </dependency>
-
-        <!-- Configuration Management -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
 
         <!-- Service Discovery -->

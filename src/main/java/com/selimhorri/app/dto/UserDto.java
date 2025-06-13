@@ -15,15 +15,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Builder
-public class ProductDto implements Serializable {
+public class UserDto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private Integer productId;
-	private String productTitle;
+	private Integer userId;
+	private String firstName;
+	private String lastName;
 	private String imageUrl;
-	private String sku;
-	private Double priceUnit;
-	private Integer quantity;
+	private String email;
+	private String phone;
 
 	@JsonInclude(Include.NON_NULL)
 	private Set<FavouriteDto> favouriteDtos;
